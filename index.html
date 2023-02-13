@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d05000222c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Header-->
@@ -43,16 +44,76 @@
                         pariatur inventore. Assumenda dicta et molestiae at rem magni dolore tempore quaerat reprehenderit, ipsam rerum 
                         illum repellendus corporis quidem nostrum?</p>
 
-                    <div class="tab-tables">
-                        <p class="tab-links">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Developer</span><br>Web Application Development</li>
+                            <li><span>App Development</span><br>Android Studio</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019 | Work Immersion - San Miguel, Bulacan</span><br>Bulacan Polytechnic College (San Miguel Campus)</li>
+                            <li><span>2023 | Internship - (none) </span><br> (none)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - present | Malolos City, Bulacan</span><br>BS in Information Technology</li>
+                            <li><span>2017-2019 | San Miguel, Bulacan</span><br>TVL - Information and Communications Technology</li>
+                            <li><span>2013 - 2017 | San Miguel, Bulacan</span><br>Junior High School</li>
+                        </ul>
                     </div>
                </div>
             </div>
         </div>
     </div>
 
+    <!---Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea incidunt, odio illum sapiente eos in optio at excepturi earum temporibus?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Android Developer</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea incidunt, odio illum sapiente eos in optio at excepturi earum temporibus?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Research Writer</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea incidunt, odio illum sapiente eos in optio at excepturi earum temporibus?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!---Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+        </div>
+    </div>
+
     <script src="./assets/js/main.js"></script>
+
 </body>
 </html>
